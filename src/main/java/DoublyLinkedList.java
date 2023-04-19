@@ -1,5 +1,3 @@
-package org.example;
-
 public class DoublyLinkedList {
     private class Node {
         private int value;

@@ -1,5 +1,3 @@
-package org.example;
-
 public class LinkedList {
 
     private class Node {
