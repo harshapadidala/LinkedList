@@ -30,7 +30,7 @@ public class Main {
         linkedList.display();
         */
 
-
+        /*
         DoublyLinkedList dll = new DoublyLinkedList();
         dll.insertAtBeginning(5);
         dll.insertAtBeginning(4);
@@ -50,5 +50,24 @@ public class Main {
         dll.deleteNode(5);
 
         dll.display();
+         */
+
+        CircularLinkedList cll = new CircularLinkedList();
+
+        cll.insert(1);
+        cll.insert(2);
+        cll.insert(3);
+        cll.insert(4);
+        cll.insert(5);
+ 
+        cll.display();
+
+        cll.delete(3);
+
+        System.out.println();
+        cll.display();
+        System.out.println();
+        System.out.println("HEAD " + cll.head());
+        System.out.println("TAIL " + cll.tail());
     }
 }
