@@ -70,6 +70,32 @@ public class DoublyLinkedList {
         newNode.prev = temp;
     }
 
+//    Input:
+//    LinkedList = 1 <--> 3 <--> 4
+//    x = 3
+//    Output: 1 3
+    public Node deleteNode(int position) {
+        Node temp = head;
+
+        for(int i=1; i<position; i++) {
+            temp = temp.next;
+        }
+
+        //this is case when temp is first node
+        if(temp.prev != null) {
+            temp.prev.next = temp.next;
+        }
+        else {
+            head = temp.next;
+        }
+        //this is case when temp is last node
+        if(temp.next != null) {
+            temp.next.prev = temp.prev;
+        }
+
+        return head;
+    }
+
     public void display() {
         Node temp = head;
         while (temp != null) {

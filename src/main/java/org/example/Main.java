@@ -47,5 +47,10 @@ public class Main {
         dll.insertAfterNodeWithValue(8, 1000);
 
         dll.display();
+
+        dll.deleteNode(1);
+        dll.deleteNode(5);
+
+        dll.display();
     }
 }
