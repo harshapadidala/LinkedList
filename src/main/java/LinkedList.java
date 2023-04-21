@@ -71,6 +71,23 @@ public class LinkedList {
         size++;
     }
 
+    //insert using recursion
+    public void insertRec(int index, int value) {
+        head = insertRec(index, value, head);
+    }
+
+    private Node insertRec(int index, int value, Node node) {
+        if(index == 0) {
+            Node newNode = new Node(value);
+            newNode.next = node;
+            size++;
+            return newNode;
+        }
+
+        node.next = insertRec(index--, value, node.next);
+        return node;
+    }
+
     public int deleteFirst() {
         if(head == null) return -1;
 
