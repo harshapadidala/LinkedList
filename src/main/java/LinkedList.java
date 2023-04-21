@@ -84,7 +84,7 @@ public class LinkedList {
             return newNode;
         }
 
-        node.next = insertRec(index--, value, node.next);
+        node.next = insertRec(index-1, value, node.next);
         return node;
     }
 

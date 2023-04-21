@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        /*
+
         LinkedList linkedList = new LinkedList();
 
         linkedList.insertAtBeginning(5);
@@ -28,8 +28,10 @@ public class Main {
         System.out.println(linkedList.deleteAtIndex(2));
 
         linkedList.display();
-        */
 
+        linkedList.insertRec(4, 220);
+
+        linkedList.display();
         /*
         DoublyLinkedList dll = new DoublyLinkedList();
         dll.insertAtBeginning(5);
@@ -52,6 +54,7 @@ public class Main {
         dll.display();
          */
 
+        /*
         CircularLinkedList cll = new CircularLinkedList();
 
         cll.insert(1);
@@ -69,5 +72,7 @@ public class Main {
         System.out.println();
         System.out.println("HEAD " + cll.head());
         System.out.println("TAIL " + cll.tail());
+
+         */
     }
 }
